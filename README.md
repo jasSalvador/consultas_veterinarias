@@ -1,6 +1,6 @@
 # Consultas Veterinarias
 
-Este proyecto consiste en la construcción de una aplicación web utilizando **Vue.js** con **Vue Router** para interactuar con una **API REST**. La aplicación permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) relacionadas con consultas médicas veterinarias.
+Este es un proyecto frontend desarrollado con Vue.js que permite gestionar consultas médicas veterinarias. **El proyecto requiere un backend específico** para manejar las operaciones de creación, consulta, actualización y eliminación de datos.
 
 ## Características
 
@@ -10,31 +10,27 @@ Este proyecto consiste en la construcción de una aplicación web utilizando **V
 - Eliminación de consultas.
 - Uso de componentes reutilizables y un diseño intuitivo para la interacción del usuario.
 
-## Configuración del proyecto
+## Requisitos
 
-### Instalación
+- **Backend:** Este proyecto está diseñado para conectarse a un backend desarrollado en [framework o lenguaje del backend, por ejemplo, Node.js con Express]. El backend debe implementar los siguientes endpoints:
+
+  - `GET /consultas` - Obtiene todas las consultas.
+  - `POST /consultas` - Crea una nueva consulta.
+  - `PUT /consultas/:id` - Actualiza una consulta existente.
+  - `DELETE /consultas/:id` - Elimina una consulta.
+
+  > **Nota:** Este frontend no utiliza una API pública. Se debe configurar un backend local compatible para que funcione correctamente.
+
+## Configuración
+
+1. Asegúrate de tener el backend en funcionamiento en tu entorno local. Si no tienes acceso al backend original, puedes crear uno similar siguiendo los requisitos mencionados en la sección anterior.
+2. Clona este repositorio y sigue los pasos para configurar el frontend.
+
+### Configuración del Frontend
+
 ```bash
 npm install
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
